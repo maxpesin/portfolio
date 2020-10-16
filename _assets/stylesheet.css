@@ -52,16 +52,16 @@ nav a {
     background-attachment: fixed;
     background-position: center;
 }
-.subsection:before {
+/* .subsection:before {
     margin-top: -100px;
-}
+} */
 .subsection div a {
-    height: 350px;
+    /* height: 350px; */
     display: table-cell;
     vertical-align: middle;
 }
-.subsection:first-child {
-    background: black;
+.black {
+    background: #070607;
 }
 .section-thumbnail img {
     opacity: 0.7;
@@ -73,7 +73,7 @@ nav a {
 }
 .section-thumbnail img:hover {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(0.95);
     margin: auto;
 }
 .first {
