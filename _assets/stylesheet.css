@@ -1,17 +1,17 @@
-/*------- COMMON ------*/
+/* COMMON ----*/
 html, body {
     height: 100%;
     background: rgba(0, 0, 0, 0);
     scroll-behavior: smooth;
     margin: 0;
+    /* outline: none; */
 }
-
 h1, h2, h3, h4, h5, h6, p {
     margin: 5px 0;
     font-size: 10px;
     color: #fff;
 }
-
+/* NAV ----*/
 nav {
     position: fixed;
     width: 100%;
@@ -30,8 +30,6 @@ nav a {
     display: inline-block;
     width: 200px;
 }
-
-/*------ NAV ------*/
 .nav a:visited,
 .nav a:link {
     transition: font-size 0.5s;
@@ -40,11 +38,22 @@ nav a {
 .nav a:active {
     font-size: 120%;
 }
+@media only screen and (max-width: 420px) {
+    .nav-div {
+        width: 50%;
+        float: left;
+    }
+    nav a {
+        font-size: 14px;
+    }
+    .nav a:hover,
+    .nav a:active {
+        font-size: 14px;
+    }
+}
 /*------- SECTION ------*/
 .row {
-    max-width: 1140px;
     margin: 0 auto;
-    display: table;
 }
 .section {
     height: 100%;
@@ -52,29 +61,22 @@ nav a {
     background-attachment: fixed;
     background-position: center;
 }
-/* .subsection:before {
-    margin-top: -100px;
-} */
-.subsection div a {
-    /* height: 350px; */
-    display: table-cell;
-    vertical-align: middle;
-}
 .black {
-    background: #070607;
+    background: black;
 }
 .section-thumbnail img {
+    display: block;
     opacity: 0.7;
     transform: scale(0.8);
     transition: transform 0.5s, opacity 0.5s;
     margin: auto;
     width: 100%;
-    height: 80%;
+    max-width: 900px;
 }
 .section-thumbnail img:hover {
     opacity: 1;
-    transform: scale(0.95);
-    margin: auto;
+    transform: scale(1);
+    /* margin: auto; */
 }
 .first {
     background-image: url("../_assets/img/elephant_wildlife-wallpaper-1920x1080.jpg");
@@ -85,20 +87,26 @@ nav a {
 .third {
      background-image: url("../_assets/img/sunset_clouds_guam-wallpaper-1920x1080.jpg");
 }
+/*------- ANCHOR TARGET --*/
+:target {
+    padding-top: calc(50vh - 60px);
+    margin-top: calc(-50vh + 60px);
+    display: block;
+    }
 /*------- SCROLLBAR ------*/
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
-  }
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f100;
-  }
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.5);
-  }
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgb(0, 0, 0, 0.8);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
