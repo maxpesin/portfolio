@@ -23,7 +23,6 @@ nav {
 nav a {
     text-decoration: none;
     line-height: 30px;
-    font-family: cursive;
     color: #fff;
 }
 .nav-div {
@@ -38,20 +37,7 @@ nav a {
 .nav a:active {
     font-size: 120%;
 }
-@media only screen and (max-width: 420px) {
-    .nav-div {
-        width: 50%;
-        float: left;
-    }
-    nav a {
-        font-size: 14px;
-    }
-    .nav a:hover,
-    .nav a:active {
-        font-size: 14px;
-    }
-}
-/*------- SECTION ------*/
+/* SECTION ----*/
 .row {
     margin: 0 auto;
 }
@@ -87,13 +73,13 @@ nav a {
 .third {
      background-image: url("../_assets/img/sunset_clouds_guam-wallpaper-1920x1080.jpg");
 }
-/*------- ANCHOR TARGET --*/
+/* ANCHOR TARGET ----*/
 :target {
     padding-top: calc(50vh - 60px);
     margin-top: calc(-50vh + 60px);
     display: block;
     }
-/*------- SCROLLBAR ------*/
+/* SCROLLBAR ----*/
 /* width */
 ::-webkit-scrollbar {
 width: 5px;
@@ -109,4 +95,21 @@ background: rgb(0, 0, 0, 0.8);
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 background: #555;
+}
+/* MEDIA QUERIES ---- */
+@media only screen and (max-width: 420px) {
+    .nav-div {
+        width: 50%;
+        float: left;
+    }
+    nav a {
+        font-size: 14px;
+    }
+    .nav a:hover,
+    .nav a:active {
+        font-size: 14px;
+    }
+    .section {
+        background-attachment: scroll;
+    }
 }
