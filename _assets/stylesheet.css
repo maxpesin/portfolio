@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 /* COMMON ----*/
 html, body {
     height: 100%;
@@ -38,8 +31,6 @@ nav a {
 }
 .nav a:visited,
 .nav a:link {
-    -webkit-transition: font-size 0.5s;
-    -o-transition: font-size 0.5s;
     transition: font-size 0.5s;
 }
 .nav a:hover,
@@ -62,23 +53,15 @@ nav a {
 .section-thumbnail img {
     display: block;
     opacity: 0.7;
-    -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-            transform: scale(0.8);
-    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-    transition: opacity 0.5s, -webkit-transform 0.5s;
-    -o-transition: transform 0.5s, opacity 0.5s;
+    transform: scale(0.8);
     transition: transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
     margin: auto;
     width: 100%;
     max-width: 900px;
 }
 .section-thumbnail img:hover {
     opacity: 1;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     /* margin: auto; */
 }
 .first {
