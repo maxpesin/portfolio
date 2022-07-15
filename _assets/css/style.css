@@ -281,6 +281,11 @@ h1 {
   /* IE grid workaround */
   text-align: center;
 }
+@media only screen and (max-width: 2100px) {
+  .portfolio {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
 @media only screen and (max-width: 1060px) {
   .portfolio {
     grid-template-columns: repeat(2, 1fr);
@@ -297,12 +302,6 @@ h1 {
   max-width: 500px;
   margin-left: 10px;
   margin-right: 10px;
-}
-@media only screen and (max-width: 1060px) {
-  .card {
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 .card-h5 {
   color:#faebd7;
