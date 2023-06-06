@@ -274,6 +274,7 @@ h1 {
 /*-------------------------------*/
 .portfolio {
   width: 80%;
+  height: 100%;
   margin: auto;
   display: grid;
   grid-gap: 0;
@@ -281,25 +282,46 @@ h1 {
   /* IE grid workaround */
   text-align: center;
 }
-@media only screen and (max-width: 2100px) {
-  .portfolio {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  }
-}
-@media only screen and (max-width: 1060px) {
+
+@media only screen and (max-width: 1400px) {
   .portfolio {
     grid-template-columns: repeat(2, 1fr);
     width: calc(100% - 20px);
     margin: auto;
   }
+
+  .portfolio .card {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+  }
 }
+
+@media only screen and (max-width: 1040px) {
+  .portfolio {
+    grid-template-columns: repeat(1, 1fr);
+    width: calc(100% - 20px);
+    margin: auto;
+  }
+
+  .portfolio .card {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+  }
+}
+
 .portfolio-heading {
   grid-column: 1 / -1;
 }
+
 /* IE grid workaround */
 .card {
   display: inline-block;
   max-width: 500px;
+  /* height: 150px; */
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -328,8 +350,9 @@ h1 {
 /*-------------------------------*/
 .footer {
   margin-top: 90px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   grid-column: 1 / -1;
+  align-self: end;
 }
 .footer-section {
     position: absolute;
