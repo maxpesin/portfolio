@@ -317,6 +317,62 @@ h1 {
   grid-column: 1 / -1;
 }
 
+.box-name {
+  margin: 40px 0 0 0;
+  color: #faebd7;
+  font-family: 'assassin';
+  font-size: 30px;
+}
+
+.heading-box {
+  text-align: center;
+}
+
+/* <<<<<<<<<<<<<<<<TABS>>>>>>>>>>>>>>>> */
+
+.tabs {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  margin: 18px 10px;
+  height: 46px;
+  border-bottom: 1px solid black;
+}
+
+.tablinks {
+  background-color: inherit;
+  color: #f4f4f4;
+  cursor: pointer;
+  border: none;
+  font-family: 'assassin';
+  padding: 10px 16px;
+  font-size: 18px;
+  width: 80px;
+}
+
+.tablinks:hover {
+  color: rgba(190, 133, 10, 0.6);
+  transition: color 0.8s ease, border-bottom-color 0.8s ease;
+}
+
+.tablinks:active {
+  transform: scale(0.95);
+}
+
+.tablinks:focus {
+  color: rgba(190, 133, 10, 0.9);
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 80px; 
+  background-color: rgba(190, 133, 10, 0.9);
+  transition: all 0.3s ease; 
+}
+
 /* IE grid workaround */
 .card {
   display: inline-block;
