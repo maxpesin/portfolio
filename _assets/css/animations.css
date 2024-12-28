@@ -1,13 +1,3 @@
-/*---- FONT-FACE ----------------*/
-/*-------------------------------*/
-@font-face {
-  font-family: "playball";
-  src: url('../../_assets/font/playball/Playball.ttf') format("TrueType");
-}
-@font-face {
-  font-family: "assassin";
-  src: url('../../_assets/font/assassin/Assassin$.ttf') format("TrueType");
-}
 /*---- FADEIN -------------------*/
 /*-------------------------------*/
 @keyframes fadein {
